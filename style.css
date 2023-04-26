@@ -1,0 +1,93 @@
+:root {
+  --light-body: #191919;
+  --red-light: #ff0000;
+  --yellow-light: #ffff00;
+  --green-light: #008000;
+}
+
+
+
+
+
+.top-box {
+  background-color: var(--light-body);
+  height: 70px;
+  width: 30px;
+}
+
+.red-light-body {
+  background-color: var(--light-body);
+  height: 80px;
+  width: 80px;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+  padding-top: 10px;
+
+}
+.red-light {
+  background-color: var(--red-light);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.red-light:hover {
+  filter: brightness(350%);
+  animation: pulsate .5s ease-out infinite;
+}
+
+.yellow-light-body {
+  background-color: var(--light-body);
+  height: 80px;
+  width: 80px;
+}
+.yellow-light {
+  background-color: var(--yellow-light);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.yellow-light:hover {
+  filter: brightness(350%);
+  animation: pulsate 1s ease-out infinite;
+}
+
+.green-light-body {
+  background-color: var(--light-body);
+  height: 80px;
+  width: 80px;
+  border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+  padding-bottom: 10px;
+
+}
+.green-light {
+  background-color: var(--green-light);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.green-light:hover {
+  filter: brightness(250%);
+  animation: pulsate 1.5s ease-out infinite;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+}
+
+
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
